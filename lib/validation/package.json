@@ -1,0 +1,14 @@
+{
+  "name": "validation",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "files": [
+    "form.js"
+  ],
+  "dependencies": {
+    "yup": "^0.28.5"
+  }
+}

@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+      overflow-x: hidden;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .nav{
+    background-color: #008cba;
+    position: relative;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+  .logo > a > img {
+    height: 100px;
+    background-color: transparent;
+    z-index: 2001;
+    
+  }
+
+  .half{
+    width: 50%;
+    float: left;
+  }
+
+  .split > .half:first-child > form {
+    margin-right: 12px;
+  }
+
+  .split > .half:last-child > form {
+    margin-left: 12px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    z-index: 2000;
+    position: relative;
+    display: inline-block;
+}
+
+  .webinar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .player{
+    margin: 100px auto;
+  }
+  
+  h1 {
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+  }
+
+  fieldset{
+    border: none;
+  }
+  
+  .form {
+    background: #0e101c;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .err {
+    color: #bf1650;
+  }
+  
+  p::before {
+    display: inline;
+    content: "⚠ ";
+  }
+
+  .radioBtn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: unset;
+    margin-top: unset;
+  }
+
+  .radioBtn > input {
+    display: inline-block;
+    width: unset;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radioBtn:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioBtn input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioBtn input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioBtn .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+  
+  input, select {
+    background: #f9f9f9;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #235990;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  option {
+    padding: 10px 15px;
+  }
+  
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  label.checkbox{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+  }
+
+  input.checkbox{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  button[type="submit"].loading {
+    width: 100%;
+  }
+  
+  button[type="submit"],
+  input[type="submit"] {
+    background: #008cba;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+  }
+  
+  button[type="submit"]:not([disabled]):hover,
+  input[type="submit"]:not([disabled]):hover {
+    background: #3281cf;
+  }
+  
+  button[type="submit"]:not([disabled]):active,
+  input[type="button"]:not([disabled]):active,
+  input[type="submit"]:not([disabled]):active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+  
+  input:disabled {
+    opacity: 0.4;
+  }
+  
+  input[type="button"]:hover {
+    transition: 0.3s all;
+  }
+  
+  button[type="submit"],
+  input[type="button"],
+  input[type="submit"] {
+    -webkit-appearance: none;
+  }
+  
+  .App {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  button[type="button"] {
+    display: block;
+    appearance: none;
+    background: #333;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  pre {
+    color: white;
+  }
+  
+  hr {
+    margin-top: 30px;
+  }
+  
+  button {
+    display: block;
+    appearance: none;
+    margin-top: 40px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  .route-wrapper {
+    position: relative;
+  }
+  
+  .route-wrapper > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+.route-nav {
+  position: relative;
+  margin-bottom: 98px;
+}
+
+.route-nav > div {
+  text-align: center;
+}
+
+.route-nav > div > button{
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+  margin-top: 20px;
+}
+
+.route-nav > div > button:hover,
+.route-nav > div > button:focus,
+.route-nav > div > button:active{
+    background-color: rgb(23, 180, 23);
+    color: #fff;
+}
+
+.route-nav > .half:first-child > * {
+  margin-right: 2px;
+}
+
+.route-nav > .half:last-child > * {
+  margin-left: 2px;
+}

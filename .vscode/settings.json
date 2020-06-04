@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/24170ed5-4d94-4478-83e6-2b263c4c141d/resourceGroups/gradatim-konferencje/providers/Microsoft.Web/sites/gradatim-forms"
+}
