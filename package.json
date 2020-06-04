@@ -22,10 +22,11 @@
     "react-scripts": "^3.4.1"
   },
   "scripts": {
-    "build": "cd ./front/ && react-scripts build && cd ../",
-    "launch": "cd ./front/ && react-scripts build && cd ../ && node app.js",
+    "build": "cd ./front/ && react-scripts build && cd ..",
+    "launch": "cd ./front/ && react-scripts build && cd .. && node app.js",
     "start": "node app.js",
-    "front:start": "cd ./front/ && react-scripts start && cd ../",
-    "front:build": "cd ./front/ && react-scripts build && cd ../"
+    "front:start": "cd ./front/ && react-scripts start && cd ..",
+    "front:build": "cd ./front/ && react-scripts build && cd ..",
+    "postinstall": "cd ./front/ && npm ci && cd .."
   }
 }
