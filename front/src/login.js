@@ -4,7 +4,7 @@ import { BallPulse } from 'react-pure-loaders'
 import schema from '@validation/client'
 
 function Login(props) {
-  const { register, handleSubmit, errors, clearError } = useForm({ validationSchema: schema.login });
+  const { register, handleSubmit, errors } = useForm({ validationSchema: schema.login });
   const [working, setWorking] = useState(false);
 
   const onSubmit = async data => {

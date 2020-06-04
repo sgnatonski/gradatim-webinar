@@ -4,7 +4,7 @@ import { BallPulse } from 'react-pure-loaders'
 import schema from '@validation/client'
 
 function Reset(props) {
-  const { register, handleSubmit, errors, clearError } = useForm({ validationSchema: schema.reset });
+  const { register, handleSubmit, errors } = useForm({ validationSchema: schema.reset });
   const [working, setWorking] = useState(false);
   const [resetDone, setResetDone] = useState(false);
 

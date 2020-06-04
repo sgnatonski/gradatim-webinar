@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import schema from '@validation/client'
 
 function Password(props) {
-  const { register, handleSubmit, errors, clearError } = useForm({ validationSchema: schema.newPassword });
+  const { register, handleSubmit, errors } = useForm({ validationSchema: schema.newPassword });
   const [working, setWorking] = useState(false);
   let history = useHistory();
 

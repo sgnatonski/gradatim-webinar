@@ -30,7 +30,7 @@ function Register(props) {
       lastMail = mail
     }
   }
-  const { register, handleSubmit, errors, clearError, watch } = useForm({
+  const { register, handleSubmit, errors, watch } = useForm({
     validationSchema: schema.register,
     validationContext: { isCodeValid: isCodeValid, isMailUnique: isMailUnique },
     defaultValues: { regType: 'pwz' }
