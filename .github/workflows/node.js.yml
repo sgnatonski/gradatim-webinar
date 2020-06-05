@@ -34,6 +34,10 @@ jobs:
         rm -rf front/node_modules
         mv front/build public
         rm -rf front
+        rm -rf .git
+        rm -rf .github
+        rm -rf .vscode
+        rm -rf .gitignore
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
